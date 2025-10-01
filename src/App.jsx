@@ -1,12 +1,17 @@
 import { useState } from 'react'
 import "./index.css"
+import Header from './components/Header'
+import Hero from './components/Hero'
+import Movies from './components/Movies'
 
 function App() {
  
   return (
-   <>
-    <h1>NetFLix CLone</h1>
-   </>
+   <div className='bg-zinc-800 h-screen w-full '>
+    <Header/>
+    <Hero />
+    <Movies />
+   </div>
   )
 }
 
