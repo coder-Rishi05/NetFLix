@@ -144,8 +144,8 @@ jab bhi aap ek folder pe kaam kerte han to github ko nhi pta hota there for  we 
 now git have permissions it knows the folder. but it still dont do the work.
 
 kynki  git kaam kr skta hai is per to ab hm yhan per 
-untacked
-tracked
+untracked
+tracked/addeded
 modified
 staged
 or saved checkpoints create ke skte han now git have permissions here.
@@ -166,6 +166,24 @@ git status -s
 
 ?? gitHub.readme.md
 iska mtlb hai untacked file
+
+git add gitHub.readme.md
+file added
+
+A  gitHub.readme.md
+
+git status -s
+
+file added and modified
+
+AM gitHub.readme.md
+
+git commit -m "first point"
+file commited
+
+
+
+
 ```
 
 kitne saved checkpoints han 
