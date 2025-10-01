@@ -181,8 +181,42 @@ AM gitHub.readme.md
 git commit -m "first point"
 file commited
 
+git status -s
+now i will not have any status of this file
+
+kyonki git sirf unka status btaega jo files commited nhi han ya phir commit hone ke baad change nhi hua.
+
+anything i will do after that 
+ye dubara status dikhaega
+added modified
+
+git status btata hai before and after commit condition of file.
 
 
+git log btata hai sare commit histories.
+ git log --oneline
+dbd1293 (HEAD -> main) "hey"
+152232d first point
+1437e89 17th aprill
+35a93fa (origin/main, origin/HEAD) Main branch code
+
+git log detail summary deta hai
+
+ git log          
+commit dbd1293f80dd49930815fe08927fb52f76125241 (HEAD -> main)
+Author: Rishabh <rawatrishi1121@gmail.com>
+Date:   Wed Oct 1 09:25:03 2025 +0530
+
+    "hey"
+
+commit 152232daaeb0fc4e76764ef14df5a07c9a9ab167
+Author: Rishabh <rawatrishi1121@gmail.com>
+Date:   Wed Oct 1 09:24:13 2025 +0530
+
+    first point
+
+commit 1437e8935c95f051c7ac9585f491a2435ff7c5a7
+:
 
 ```
 
@@ -190,8 +224,11 @@ kitne saved checkpoints han
 
 ```
 git log --oneline, git log --oneline --graph
-```
 
+```
+### branchings 
+
+to hm branching me kya krte han ki jo hamara main project hai uska ek duplicate project bnate han or saare tasks us per perform krte han na ki main project pe esa esliye taki main branch me hamesha clean or safe code bhej sken. or jb hamara clone branch me project theek kaam krega code nhi fatega tb hm use main branch pe push krte han.
 
 
 
