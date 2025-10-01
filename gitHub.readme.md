@@ -432,4 +432,12 @@ to get them back
 command : 
 ```
 git stash apply
+
+```
+to clear stash
+
+```
+ git stash clear
+  stash apply
+    No stash entries found.
 ```
