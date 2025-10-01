@@ -226,24 +226,47 @@ kitne saved checkpoints han
 git log --oneline, git log --oneline --graph
 
 ```
+
+----
+
 ### branchings 
 
 to hm branching me kya krte han ki jo hamara main project hai uska ek duplicate project bnate han or saare tasks us per perform krte han na ki main project pe esa esliye taki main branch me hamesha clean or safe code bhej sken. or jb hamara clone branch me project theek kaam krega code nhi fatega tb hm use main branch pe push krte han.
 
+main code se copy : branching.
 
 
 
+to create branch
+
+git branch feture/navbar
+
+tell total brach
+ git branch
+  feture/navbar
+* main
+
+* means we currently working branch.
+
+to change the branch
+git switch feture/navbar
 
 
+git branch
+* feture/navbar
+  main
 
+now if i edit or make chages then commit in this branch it will show those changes on my main branch
 
+ex: 
+main branch 
+    |- pc.text
+        |- hey hi
 
-
-
-
-
-
-
+git switch feture/navbar
+            |- pc.text
+                |- hey hi
+                |-i am in feture/navbar branch
 
 
 
@@ -268,4 +291,145 @@ going back to previos saved points
     logging everything
     reverting back to the previous saved point
 
+```
+
+- merging
+
+for merging branchs we must be on main branch
+
+git merge feture/navbar branch
+
+git merge feture/navbar
+Updating 629d5db..4a945b0
+Fast-forward
+ pc.txt | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+ now i have same code in my main branch too.
+
+### conflict
+
+when i have diffrent code on same line of main branch and feature/navbar thenn git give conflict.
+
+ex: 
+
+main
+hey hi
+
+i am in feture/navbar branch
+chacha
+
+
+feature/navbar
+    
+    hey hi
+
+    i am in feture/navbar branch
+    hellloooooo
+
+now it will throw this error
+
+git merge feture/navbar
+
+Auto-merging pc.txt
+CONFLICT (content): Merge conflict in pc.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+now i have 3 options
+
+1. Accept Current changes : if i do this to mughe ise commit krna pdega or mere main branch me updated code aa jaaega jo prehle se hi vhan tha.
+
+ex: 
+hey hi
+
+i am in feture/navbar branch
+chacha
+helllooooooo
+
+- git log --oneline --graph graph and oneline
+
+```
+git log --oneline
+8b40888 (HEAD -> main) Merge branch 'feture/navbar'
+db4ddce (feture/navbar) "added 1 line"
+934334c "added third line"
+4a945b0 "added some line"
+629d5db hi
+127579c "added new"
+dbd1293 "hey"
+152232d first point
+1437e89 17th aprill
+35a93fa (origin/main, origin/HEAD) Main branch code
+
+git log --oneline --graph
+*   8b40888 (HEAD -> main) Merge branch 'feture/navbar'
+|\
+| * db4ddce (feture/navbar) "added 1 line"
+* | 934334c "added third line"
+|/
+* 4a945b0 "added some line"
+* 629d5db hi
+* 127579c "added new"
+* dbd1293 "hey"
+* 152232d first point
+* 1437e89 17th aprill
+* 35a93fa (origin/main, origin/HEAD) Main branch code
+```
+
+2. Accept incoming changes : issme second branch ka update aaega.
+
+
+3. Accept both changes : isme dono ke hi code nyi line pe aaenge.
+
+4. Compare changes
+
+
+types of merge
+
+
+Fast forwared merge. isme hm merger nhi krte balki ho updated branch hai usko hi main branch bna dete han.
+
+
+
+Three way merge : isme 3 branches se ek main branch bnate han.
+
+squash maerge 
+recursive strategy merge
+rebase merge
+
+conflict handle krna
+
+branch delete krna : git branch -d branch_name(feature/navber)
+
+~stashing samajhana
+
+jab aap kisi branch mein kaam kr rhe ho and aapne kuch code likha and aapne us code ko commit nhi kiya hai aur aap doosri branch me jaane ki koshish krte ho to git aapko bolta hai ki bhai saved nahi changes delete ho jaaenge.
+hum chahe to un changes ko delete hone ya fir un changes ko draft kr skte han jb bhi draft karenge to wo changes naa hi delete honge na hi add honge but beech me kahin dale rhenge fir aap us branch me vapas aaye to wapas se apply kr skte ho 
+
+command to create and switch to the branch
+
+git switch -C feature/add-footer
+Switched to a new branch 'feature/add-footer'
+
+this comes when we update something without commititng it
+
+git switch feature/add-footer
+error: Your local changes to the following files would be overwritten by checkout:
+        pc.txt
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+to stash the files
+```
+git stash
+Saved working directory and index state WIP on main: 8b40888 Merge branch 'feture/navbar'
+git switch feature/add-footer
+Switched to branch 'feature/add-footer'
+```
+
+now i can move to my branches but all my uncommited data will be removed
+to get them back
+command : 
+```
+git stash apply
 ```
