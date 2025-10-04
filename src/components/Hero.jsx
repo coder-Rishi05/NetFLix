@@ -2,8 +2,8 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="w-full bg-[url('./images/bg.jpg')]   relative  flex  justify-center h-screen  ">
-      
+    <div className="w-full bg-[url('./images/bg.jpg')] z-100   relative  flex  justify-center h-screen  ">
+      <div className="absolute w-full h-screen bg-black/65 -z-1 "></div>
       <div className="texts mt-40  w-1/2 ">
         <h1 className="text-[3.4rem]  leading-[5rem] text-white font-extrabold px-20 text-center  ">
           Unlimited movies, TV shows and more
