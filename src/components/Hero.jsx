@@ -9,7 +9,7 @@ const Hero = () => {
           Unlimited movies, TV shows and more
         </h1>
         <h2 className="text-center py-3 text-white  text-xl font-bold">
-          Starts at ₹149. Cancel at any time.
+          Starts at ₹149. Cancel at any time. 
         </h2>
         <h3 className="text-center py-3 text-white  font-semibold ">
           Ready to watch? Enter your email to create or restart your membership.
