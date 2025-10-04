@@ -1,18 +1,17 @@
-import { useState } from 'react'
-import "./index.css"
-import Header from './components/Header'
-import Hero from './components/Hero'
-import Movies from './components/Movies'
+import { useState } from "react";
+import "./index.css";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Movies from "./components/Movies";
 
 function App() {
- 
   return (
-   <div className='bg-zinc-800 h-screen w-full '>
-    <Header/>
-    <Hero />
+    <div className="max-w-[1440px] mx-auto h-screen bg-red-400">
+      <Header />
+      <Hero />
     <Movies />
-   </div>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
