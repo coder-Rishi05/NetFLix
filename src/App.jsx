@@ -6,7 +6,7 @@ import Movies from "./components/Movies";
 
 function App() {
   return (
-    <div className="max-w-[1536px]  mx-auto h-screen bg-red-400">
+    <div className="max-w-[1440px ]  mx-auto h-screen bg-red-400">
       <Header />
       <Hero />
       <Movies />
