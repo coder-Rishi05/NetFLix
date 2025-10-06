@@ -9,16 +9,16 @@ const Hero = () => {
           <h1 className="text-[2rem] leading-10   text-white font-extrabold text-center  ">
             Unlimited movies, TV shows and more
           </h1>
-          <h2 className="text-center py-3 text-white  text-lg font-semibold">
+          <h2 className="text-center py-3 max-sm:text-[1.1rem]  text-white  text-lg font-semibold">
             Starts at ₹149. Cancel at any time.
           </h2>
-          <h3 className="text-center py-3 text-white  px-6 ">
+          <h3 className="text-center py-3 text-white  px-2 ">
             Ready to watch? Enter your email to create or restart your
             membership.
           </h3>
           <div className="form flex flex-col items-center justify-center gap-4 ">
             <input
-              className="w-[22rem] border-1 bg-zinc-800/60 border-zinc-300 rounded-sm  text-white  px-4 py-3 placeholder:capitalize  "
+              className="w-[20rem] max-sm:w-[16rem] border-1 bg-zinc-800/60 border-zinc-300 rounded-sm  text-white  px-4 py-2 placeholder:capitalize  "
               type="text"
               placeholder="email address"
             />
@@ -26,11 +26,6 @@ const Hero = () => {
               Get Started
             </button>
           </div>
-          {/*           
-          
-          
-         
-  */}
         </div>
       </div>
     </div>
