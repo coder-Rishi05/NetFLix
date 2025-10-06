@@ -6,7 +6,7 @@ const Hero = () => {
     <div className="w-full h-[75%]  overflow-hidden border-b-amber-50 z-100 relative border-2  lg:h-full xl:h-[85%]  ">
       <div className="w-[100%] bg-center h-full bg-no-repeat absolute bg-cover bg-[url('./images/bg.jpg')] -z-10   ">
         <div className="absolute w-full h-screen  bg-black/65 -z-1 "></div>
-        <div className="texts flex-col h-full gap-1   lg:gap-4 flex px-6 items-center justify-center  ">
+        <div className="texts flex-col h-full gap-1 lg:px-20   lg:gap-4 flex px-6 items-center justify-center  ">
           <h1 className="text-[2rem] xl:text-[4rem] lg:text-[3rem] xl:leading-16 leading-10 md:px-32 xl:px-70  lg:px-50  lg:font-bold   text-white font-extrabold text-center  ">
             Unlimited movies, TV shows and more
           </h1>
