@@ -11,6 +11,6 @@
 .number-outline {
     /* White stroke around the number */
     -webkit-text-stroke: 4px white; /* thickness of the border */
-    text-stroke: 4px white; /* fallback    */
+    --text-stroke: 4px white; /* fallback    */
     color: black; /* number color */
   }
