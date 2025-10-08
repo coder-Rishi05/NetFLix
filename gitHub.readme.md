@@ -488,5 +488,36 @@ or pull krega tbhi uska main bhi update ho jaaega.
 
 ```
 
+### Advance branching
 
+There are 2 ways to create a new branch from existing.
+
+1. 
+```
+git branch -f
+Forcefully overwrites the branch with the contents of the branch.
+syntax : 
+git branch -f new-branch existing-branch
+```
+2. git checkout -b
+   this command creates a new branch from existing and move to that branch
+
+```
+git checkout -b
+Creates a new branch called and checks it out, copying all of the changes from the branch.
+
+syntax : 
+git checkout -b new-branch existing-branch
+
+ex: git checkout -b component/searchBar component/movies
+
+output : 
+Switched to a new branch 'component/searchBar'
+git branch
+  component/movies
+* component/searchBar
+  main
+  responsive/home
+  status
+```
 ******************************end****************************** 
