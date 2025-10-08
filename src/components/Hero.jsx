@@ -1,9 +1,11 @@
 import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
+import Header from "./Header";
 
 const Hero = () => {
   return (
     <div className="w-full h-[75%]  overflow-hidden border-b-amber-50 z-100 relative border-2  lg:h-full xl:h-[85%]  ">
+       <Header />
       <div className="w-[100%] bg-center h-full bg-no-repeat absolute bg-cover bg-[url('./images/bg.jpg')] -z-10   ">
         <div className="absolute w-full h-screen  bg-black/65 -z-1 "></div>
         <div className="texts flex-col h-full gap-1 lg:px-20   lg:gap-4 flex px-6 items-center justify-center  ">
